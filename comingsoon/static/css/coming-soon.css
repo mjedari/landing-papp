@@ -3,6 +3,12 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-coming-soon/blob/master/LICENSE)
  */
+
+@font-face {
+  font-family: Yekan;
+  src: url("/static/fonts/Yekan.woff");
+}
+
 html {
   height: 100%;
 }
@@ -13,14 +19,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Merriweather';
+  font-family: "Yekan";
   font-weight: 700;
 }
 
 body {
   height: 100%;
   position: relative;
-  font-family: 'Source Sans Pro';
+  font-family: "Yekan";
   font-weight: 300;
 }
 
@@ -49,7 +55,7 @@ body {
   height: 100%;
   background-color: rgba(0, 46, 102, 0.8);
   transform: skewY(4deg);
-  transform-origin: bottom right;
+  transform-origin: bottom left;
 }
 
 .masthead .masthead-content h1 {
@@ -84,15 +90,16 @@ body {
     padding-bottom: 0;
   }
   .masthead .masthead-bg {
-    transform: skewX(-8deg);
+    transform: skewX(+8deg);
     transform-origin: top right;
   }
   .masthead .masthead-content {
-    padding-left: 3rem;
-    padding-right: 10rem;
+    padding-left: 10rem;
+    padding-right: 3rem;
   }
   .masthead .masthead-content h1 {
     font-size: 3.5rem;
+    font-family: "Yekan";
   }
   .masthead .masthead-content p {
     font-size: 1.3rem;
@@ -123,7 +130,7 @@ body {
 @media (min-width: 768px) {
   .social-icons {
     position: absolute;
-    right: 2.5rem;
+    left: 2.5rem;
     bottom: 2rem;
   }
   .social-icons ul {
@@ -146,7 +153,7 @@ body {
     width: 4rem;
   }
   .social-icons ul > li > a:hover {
-    background-color: #002E66;
+    background-color: #002e66;
   }
 }
 
@@ -155,7 +162,9 @@ body {
   border-color: #cd9557;
 }
 
-.btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
+.btn-secondary:active,
+.btn-secondary:focus,
+.btn-secondary:hover {
   background-color: #ba7c37 !important;
   border-color: #ba7c37 !important;
 }

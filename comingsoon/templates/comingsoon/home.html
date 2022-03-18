@@ -10,8 +10,10 @@
     />
     <meta name="description" content="" />
     <meta name="author" content="" />
+    
+    <link rel="icon" type="image/png" href="/static/img/favicon.png"/>
 
-    <title>Coming Soon | {% block title %}Home{% endblock%}</title>
+    <title>وبلاگ من | {% block title %}خانه{% endblock%}</title>
 
     <!-- Bootstrap core CSS -->
     <link
@@ -34,11 +36,8 @@
     />
 
     <!-- Custom styles for this template -->
-    <link href="{% static 'css/coming-soon.min.css' %}" rel="stylesheet" />
-
-    <style>
-      
-    </style>
+    <link href="{% static 'css/coming-soon.css' %}" rel="stylesheet" />
+    
   </head>
 
   <body dir="rtl">
@@ -49,25 +48,25 @@
       <div class="container h-100">
         <div class="row h-100">
           <div class="col-12 my-auto">
-            <div class="masthead-content text-white py-5 py-md-0">
-              <h1 class="mb-3">به زودی!</h1>
+            <div class="masthead-content text-white py-5 py-md-0 text-right">
+              <h1 class="mb-3">وبلاگ من</h1>
               <p class="mb-5">
-                We're working hard to finish the development of this site. Our
-                target launch date is <strong>August 2020</strong>! Sign up for
-                updates using the form below!
+                اینجا صفحه وبلاگ من است. تجربیات خودم از مهاجرت به انگلیس را در اختیار شما قرار می دهم.
+                اگر دوست دارید ایمیل خود را وارد کنید تا از آماده شدن وبلاگ مطلع شوید
               </p>
-              <div class="input-group input-group-newsletter">
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Enter email..."
-                  aria-label="Search for..."
-                />
+              <div class="input-group input-group-newsletter" dir="ltr">
                 <span class="input-group-btn">
                   <button class="btn btn-secondary" type="button">
-                    Notify Me!
+                    ثبت
                   </button>
                 </span>
+                <input
+                  type="email"
+                  class="form-control text-right"
+                  placeholder="ایمیل خود را وارد کنید"
+                  aria-label="Search for..."
+                />
+                
               </div>
             </div>
           </div>
